@@ -1,4 +1,4 @@
-# 이클립스 웹 개발을 위한 이클립스 EE 설치 및 설정
+![image](https://github.com/leeapgil/study-summary/assets/36579880/5a11f818-5810-4620-ae22-d41f612fcd3c)# 이클립스 웹 개발을 위한 이클립스 EE 설치 및 설정
 
 ## 1. 필수 소프트웨어 설치
 ### 1.1 이클립스 EE 다운로드
@@ -18,17 +18,32 @@
 
 ### 1.3 아파치 톰캣 설치
 
-웹 서버 구축을 위한 아파치 톰캣 설치를 진행하도록 하겠습니다.
+Apache Tomcat은 웹 애플리케이션 서버로서 Java 언어를 사용하여 개발된 웹 애플리케이션을 호스팅하고 실행하는 데 사용됩니다. 주로 Java Servlet 및 JavaServer Pages (JSP) 기술을 이용한 웹 애플리케이션을 실행하는 데 사용됩니다. Apache Tomcat은 Apache Software Foundation에서 개발하고 유지 관리하는 오픈 소스 프로젝트로서, 사용자는 무료로 사용하고 수정하고 배포할 수 있습니다.
+
+![설치2](https://github.com/leeapgil/study-summary/blob/master/img/setting2-1.PNG)
+
+### 1.3.1 아파치와 톰캣이란?
+
+- WEB 서버 : 정적인 자료를 처리하는 서버(html,css,image등 내용이 변하지 않는 정적인 파일처리, 클라이언트 요청 처리.
+- WAS(Web Application Server) 서버 : 동적인 자료를 처리하는 서버(DB연동, 비즈니스로직)등을 처리
+  -Apache server는 WEB 역할, Tomcat server는 WAS 역할
+  -Apache Tomcat Server는 WEB + WAS 서버임.
+  
+### 1.3.2 아파치 톰캣 특징
+- Servlet Container: Apache Tomcat의 주요 기능 중 하나는 Java Servlet Container로서의 역할입니다. Servlet Container는 Java Servlet API를 구현하고, 클라이언트 요청을 받아 해당 서블릿을 실행한 후 응답을 반환하는 기능을 제공합니다.
+- JavaServer Pages (JSP): Tomcat은 JSP를 지원하므로 개발자는 HTML 페이지 내에 Java 코드를 포함하여 동적인 웹 페이지를 생성할 수 있습니다.
+- WebSocket Support: Tomcat은 WebSocket 프로토콜을 지원하여 실시간 양방향 통신을 가능하게 합니다. 이를 통해 개발자는 채팅 애플리케이션, 온라인 게임 등을 구현할 수 있습니다.
+- Security: Apache Tomcat은 다양한 보안 기능을 제공합니다. 예를 들어, SSL/TLS를 통한 데이터 암호화, 사용자 인증 및 권한 부여 등의 기능을 제공합니다.
+### 1.3.3 웹 서버 구축을 위한 아파치 톰캣 설치 
+
 [아파치 톰캣 다운로드](https://tomcat.apache.org/download-90.cgi)
+
+![설치2](https://github.com/leeapgil/study-summary/blob/master/img/setting2.PNG)
 
 - connector port 8090 으로 변경
 - admin/admin
 - 설치경로 c:\tools\tomcat9\ 
 - finish 창에서 checkbox 선택 해제
-
-![설치2](https://github.com/leeapgil/study-summary/blob/master/img/setting2.PNG)
-
-  
 
 ## 2. 기본 설정 진행
 
