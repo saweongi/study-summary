@@ -1,4 +1,3 @@
-![image](https://github.com/leeapgil/study-summary/assets/36579880/5a11f818-5810-4620-ae22-d41f612fcd3c)# 이클립스 웹 개발을 위한 이클립스 EE 설치 및 설정
 
 ## 1. 필수 소프트웨어 설치
 ### 1.1 이클립스 EE 다운로드
