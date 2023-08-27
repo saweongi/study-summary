@@ -5,13 +5,13 @@
 
 1. 아나콘다 최신 버전을 다운로드합니다. 
 [Anaconda 다운로드](https://www.anaconda.com/download-success)
-![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/2.PNG)
+![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/2.JPG)
 
-![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/3-1.PNG)
-![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/3-2.PNG)
-![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/3-3.PNG)
-![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/3-4.PNG)
-![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/3-5.PNG)
+![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/3-1.JPG)
+![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/3-2.JPG)
+![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/3-3.JPG)
+![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/3-4.JPG)
+![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/3-5.JPG)
 
  - JustMe 선택 (전체 사용은 권한 선택 불편함이 있음)
  - 기존 python이 있다면 체크 주의해서 선택(충돌 일어날 수 있음.)
@@ -59,14 +59,14 @@
 
 ### 1. 파이참 최신 버전을 다운로드합니다. 
 [Pycharm 다운로드](https://www.jetbrains.com/ko-kr/pycharm/download/?section=windows)
-![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/1.PNG)
+![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/1.JPG)
 - 프로페셔널 버전과 커뮤니티 버전 중 '커뮤니티 버전'을 설치합니다.
 - 설치 파일을 실행하고, 설치를 시작합니다.
 
-![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/4-1.PNG)
-![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/4-2.PNG)
-![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/4-3.PNG)
-![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/4-4.PNG)
+![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/4-1.JPG)
+![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/4-2.JPG)
+![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/4-3.JPG)
+![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/4-4.JPG)
 
 
 #### 아나콘다 명령어 모음
