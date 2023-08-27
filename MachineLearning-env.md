@@ -3,7 +3,8 @@
 
 ### 1. Anaconda 설치 방법
 
-1. 아나콘다 최신 버전을 다운로드합니다. 
+1. 아나콘다 최신 버전을 다운로드합니다.
+2. 
 [Anaconda 다운로드](https://www.anaconda.com/download-success)
 ![설치1](https://github.com/leeapgil/study-summary/blob/master/img/machine/2.JPG)
 
@@ -17,6 +18,7 @@
  - 기존 python이 있다면 체크 주의해서 선택(충돌 일어날 수 있음.)
    
 #### 아나콘다 기본 명령어
+
 - 아나콘다 버전 확인
   - conda -V
   - conda --version
@@ -58,6 +60,7 @@
 #### 2. Pycharm 설치 방법
 
 ### 1. 파이참 최신 버전을 다운로드합니다. 
+
 [Pycharm 다운로드](https://www.jetbrains.com/ko-kr/pycharm/download/?section=windows)
 ![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/1.JPG)
 - 프로페셔널 버전과 커뮤니티 버전 중 '커뮤니티 버전'을 설치합니다.
@@ -70,8 +73,10 @@
 
 
 #### 아나콘다 명령어 모음
+
 - 버전 확인, 업데이트, 가상환경 관리 등의 명령어가 제공됩니다.
 
 #### 아나콘다와 Pycharm 연동
+
 1. Pycharm을 실행하고, 새 프로젝트를 생성합니다.
 2. 가상환경을 설정하고, 프로젝트를 생성합니다.
