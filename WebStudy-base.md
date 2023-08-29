@@ -85,7 +85,7 @@ String str2 = "안녕하세요..";
 #### page 지시어
 - 문서의 타입, 에러 페이지, MIME 타입 등을 설정합니다.
 
-#### ⛓ page 지시어의 속성들
+#### page 지시어의 속성들
 ##### language, contentType, pageEncoding 속성
 ```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
