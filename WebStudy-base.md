@@ -2,7 +2,9 @@
 
 ### Eclipse에서의 Dynamic Web Project 구조
 
-Dynamic Web Project를 생성한 후에는 왼쪽의 Project Explorer 창에서 다음과 같이 생성된 폴더들을 확인할 수 있습니다. 각 폴더가 어떤 역할을 하는지, 무엇이 들어가는지 설명해 보겠습니다.
+Dynamic Web Project를 생성한 후에는 왼쪽의 Project Explorer 창에서 다음과 같이 생성된 폴더들을 확인할 수 있습니다. 
+![image](https://github.com/leeapgil/study-summary/img/web1.PNG)
+
 
 #### 1) Test
 - **설명**: 방금 생성한 프로젝트를 나타냅니다.
@@ -74,7 +76,7 @@ String str2 = "안녕하세요..";
 - 지시어는 JSP 페이지를 Java(서블릿) 코드로 변환하는데 필요한 정보를 JSP 엔진에 알려주는 역할을 합니다.
 - 주로 스크립트 언어나 인코딩 방식 등을 설정합니다.
 
-#### 📃 지시어의 기본 구문
+####  지시어의 기본 구문
 ```jsp
 <%@ 지시어 종류 속성1="값1" 속성2="값2" ...%>
 ```
@@ -88,7 +90,7 @@ String str2 = "안녕하세요..";
 - 문서의 타입, 에러 페이지, MIME 타입 등을 설정합니다.
 
 #### ⛓ page 지시어의 속성들
-##### 🔗 language, contentType, pageEncoding 속성
+##### language, contentType, pageEncoding 속성
 ```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 ```
@@ -96,10 +98,10 @@ String str2 = "안녕하세요..";
 - `contentType`: 생성할 응답 문서의 MIME 타입을 지정합니다.
 - `pageEncoding`: 인코딩을 지정합니다.
 
-##### 🔗 import 속성
+#####  import 속성
 - 외부 클래스를 임포트하기 위해 사용합니다.
 
-#### 💻 import 속성을 이용한 날짜 표시 페이지
+####  import 속성을 이용한 날짜 표시 페이지
 ```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.text.SimpleDateFormat" %> 
@@ -126,4 +128,3 @@ String str2 = "안녕하세요..";
 
 ---
 
-이렇게 정리하면 도움이 되실까요?
