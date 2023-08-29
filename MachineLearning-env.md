@@ -72,11 +72,24 @@
 ![설치2](https://github.com/leeapgil/study-summary/blob/master/img/machine/4-4.JPG)
 
 
-#### 아나콘다 명령어 모음
+#### 아나콘다 가상환경 생성
 
-- 버전 확인, 업데이트, 가상환경 관리 등의 명령어가 제공됩니다.
+- 기본설치는 [y] 선택
+![설치3](https://github.com/leeapgil/study-summary/blob/master/img/machine/6-1.JPG)
+![설치3](https://github.com/leeapgil/study-summary/blob/master/img/machine/6-2.JPG)
+![설치3](https://github.com/leeapgil/study-summary/blob/master/img/machine/6-3.JPG)
+
 
 #### 아나콘다와 Pycharm 연동
 
 1. Pycharm을 실행하고, 새 프로젝트를 생성합니다.
 2. 가상환경을 설정하고, 프로젝트를 생성합니다.
+![설치4](https://github.com/leeapgil/study-summary/blob/master/img/machine/5-1.JPG)
+![설치4](https://github.com/leeapgil/study-summary/blob/master/img/machine/5-2.JPG)
+![설치4](https://github.com/leeapgil/study-summary/blob/master/img/machine/5-3.JPG)
+![설치4](https://github.com/leeapgil/study-summary/blob/master/img/machine/5-4.JPG)
+
+-만약 가상환경을 자동으로 찾지 못한다면 
+- cmd 에서 conda init 실행
+- anaconda/envs/가상환경명/Scripts/conda.exe 경로 직접 설정
+
