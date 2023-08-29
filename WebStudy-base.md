@@ -3,10 +3,9 @@
 ### Eclipse에서의 Dynamic Web Project 구조
 
 Dynamic Web Project를 생성한 후에는 왼쪽의 Project Explorer 창에서 다음과 같이 생성된 폴더들을 확인할 수 있습니다. 
-![image](https://github.com/leeapgil/study-summary/img/web1.PNG)
+![설명1](https://github.com/leeapgil/study-summary/blob/master/img/web1.PNG)
 
-
-#### 1) Test
+#### 1) proj
 - **설명**: 방금 생성한 프로젝트를 나타냅니다.
 
 #### 2) Java Resources
@@ -28,10 +27,7 @@ Dynamic Web Project를 생성한 후에는 왼쪽의 Project Explorer 창에서 
 #### 5) Servers
 - **설명**: 설정을 마친 톰캣 서버가 들어있습니다.
 
-물론입니다! 다음은 Markdown 형식으로 정리한 내용입니다:
-
 ---
-
 ### JSP (JavaServer Pages)의 주요 목적과 사용 예시
 
 #### JSP의 주요 목적
