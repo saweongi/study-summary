@@ -97,17 +97,17 @@ out.println("<h1>Hello World!</h1>");
 <h1>GET and POST Example</h1>
 
 <!-- GET Method -->
-<form action="/main" method="get">
+<form action="main" method="get">
   <label for="nm">Name (GET):</label>
   <input type="text" id="nm" name="nm">
-  <input type="submit" value="Submit with GET">
+  <input type="submit" value="GET 요청">
 </form>
 
 <!-- POST Method -->
-<form action="/main" method="post">
+<form action="main" method="post">
   <label for="nm">Name (POST):</label>
   <input type="text" id="nm" name="nm">
-  <input type="submit" value="Submit with POST">
+  <input type="submit" value="POST 요청">
 </form>
 
 </body>
