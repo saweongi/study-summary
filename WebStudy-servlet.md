@@ -79,3 +79,78 @@ out.println("<h1>Hello World!</h1>");
 - Servlet 생명주기를 정확하게 이해하고 `init()`와 `destroy()` 메서드를 적절히 사용해야 합니다.
 
 이러한 기능과 메서드들은 Servlet 프로그래밍의 기초를 이루며, 이를 통해 동적인 웹 애플리케이션을 구축할 수 있습니다.
+
+
+
+아래에 `index.html`과 `ServletMain`의 예제 코드.
+
+### index.html
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Servlet Example</title>
+</head>
+<body>
+
+<h1>GET and POST Example</h1>
+
+<!-- GET Method -->
+<form action="/main" method="get">
+  <label for="nm">Name (GET):</label>
+  <input type="text" id="nm" name="nm">
+  <input type="submit" value="Submit with GET">
+</form>
+
+<!-- POST Method -->
+<form action="/main" method="post">
+  <label for="nm">Name (POST):</label>
+  <input type="text" id="nm" name="nm">
+  <input type="submit" value="Submit with POST">
+</form>
+
+</body>
+</html>
+```
+
+### ServletMain.java
+
+```java
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/main")
+public class ServletMain extends HttpServlet {
+
+  @Override
+  protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    String name = request.getParameter("nm");
+    response.setContentType("text/html; charset=UTF-8");
+    PrintWriter out = response.getWriter();
+    out.println("<h1>Received via GET: " + name + "</h1>");
+  }
+
+  @Override
+  protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+    request.setCharacterEncoding("UTF-8");
+    String name = request.getParameter("nm");
+    response.setContentType("text/html; charset=UTF-8");
+    PrintWriter out = response.getWriter();
+    out.println("<h1>Received via POST: " + name + "</h1>");
+  }
+}
+```
+
+### 코드 설명
+
+- `index.html`에서는 두 개의 폼을 제공합니다. 하나는 GET 방식, 다른 하나는 POST 방식으로 서블릿 `/main`에 데이터를 전송합니다.
+- `ServletMain.java`에서는 `doGet()`와 `doPost()` 메서드를 오버라이딩하여 각각 GET과 POST 요청을 처리합니다.
+- `getParameter("nm")`을 통해 전송된 데이터를 읽습니다.
+- 문자 인코딩은 GET에서는 URL에 의해, POST에서는 `request.setCharacterEncoding("UTF-8")`을 통해 설정됩니다.
+
+이 예제를 통해 기본적인 GET과 POST 요청 처리 방법을 확인할 수 있습니다.
