@@ -154,3 +154,70 @@ public class ServletMain extends HttpServlet {
 - 문자 인코딩은 GET에서는 URL에 의해, POST에서는 `request.setCharacterEncoding("UTF-8")`을 통해 설정됩니다.
 
 이 예제를 통해 기본적인 GET과 POST 요청 처리 방법을 확인할 수 있습니다.
+
+
+
+
+# web.xml: Servlet 매핑과 Filter 사용법
+
+`web.xml` 파일은 웹 애플리케이션의 배포 설정과 초기화 파라미터, 보안 설정 등을 정의합니다. Servlet 매핑과 Filter 설정을 위해 주로 사용됩니다.
+
+## Servlet 매핑
+
+### 설명
+- `web.xml`을 사용하여 서블릿을 URL에 매핑할 수 있습니다.
+
+### XML 예시
+```xml
+<servlet>
+  <servlet-name>MyServlet</servlet-name>
+  <servlet-class>com.example.MyServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+  <servlet-name>MyServlet</servlet-name>
+  <url-pattern>/main</url-pattern>
+</servlet-mapping>
+```
+
+### 주의사항
+- `servlet-name`은 고유해야 하며, `servlet-class`는 완전한 클래스 경로를 지정해야 합니다.
+  
+---
+
+## Filter 사용법
+
+### 설명
+- Filter는 요청이 서블릿에 도달하기 전과 후에 특별한 처리를 수행할 수 있습니다.
+
+### XML 예시
+```xml
+<filter>
+  <filter-name>MyFilter</filter-name>
+  <filter-class>com.example.MyFilter</filter-class>
+</filter>
+
+<filter-mapping>
+  <filter-name>MyFilter</filter-name>
+  <url-pattern>/*</url-pattern>
+</filter-mapping>
+```
+
+### 주의사항
+- `filter-name`은 고유해야 하며, `filter-class`는 완전한 클래스 경로를 지정해야 합니다.
+- `url-pattern`은 필터가 적용될 URL 패턴을 지정합니다.
+
+---
+
+### 작동 순서
+1. 클라이언트의 요청이 들어옵니다.
+2. 필터가 적용되며, 필요한 전처리 작업을 수행합니다.
+3. 요청이 서블릿에 전달되어 처리됩니다.
+4. 필터에서 후처리 작업이 수행됩니다.
+5. 응답이 클라이언트에 전달됩니다.
+
+### 자주 실수하는 부분
+- 서블릿과 필터의 `name`이나 `class` 경로를 잘못 설정하여 404 에러나 클래스 불러오기 실패가 발생할 수 있습니다.
+- `url-pattern` 설정을 잘못하여 필터가 적용되지 않거나, 더 많은 URL에 적용되는 실수를 할 수 있습니다.
+
+`web.xml`을 이용한 설정은 XML 기반의 설정으로, 오타나 구조적 실수가 쉽게 발생할 수 있으므로 주의가 필요합니다.
