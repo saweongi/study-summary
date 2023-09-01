@@ -217,3 +217,56 @@ square = lambda x: x * x
 print(square(5))  # 결과는 25
 ```
 
+## 타입 힌트와 타입 주석
+
+Python 3.5 이상에서는 타입 힌트(Type Hints)라는 기능을 제공합니다. 이를 사용하면 함수의 매개변수 타입과 반환 타입을 명시적으로 지정할 수 있습니다. 이는 코드의 가독성을 높이고, 개발자가 의도한 타입에 따라 코드가 작동할 것임을 미리 알려주는 역할을 합니다.
+
+### 기본적인 타입 힌트
+
+함수의 매개변수 타입과 반환 타입을 `->`를 사용하여 지정합니다.
+
+```python
+def add(a: int, b: int) -> int:
+    return a + b
+```
+
+### 리스트, 딕셔너리, 튜플에 대한 타입 힌트
+
+`from typing import List, Dict, Tuple`을 사용하여 컬렉션에 대한 타입 힌트를 지정할 수 있습니다.
+
+```python
+from typing import List, Dict, Tuple
+
+def manipulate_data(numbers: List[int], options: Dict[str, bool]) -> Tuple[int, int]:
+    total = sum(numbers)
+    count = len(numbers)
+    return total, count
+```
+
+### Optional 타입
+
+값이 `None`일 수도 있는 경우에는 `Optional` 타입 힌트를 사용할 수 있습니다.
+
+```python
+from typing import Optional
+
+def greet(name: str, title: Optional[str] = None) -> str:
+    if title:
+        return f"Hello, {title} {name}"
+    else:
+        return f"Hello, {name}"
+```
+
+### 가변 인자에 대한 타입 힌트
+
+`*args`와 `**kwargs`에도 타입 힌트를 적용할 수 있습니다.
+
+```python
+from typing import Any
+
+def foo(*args: int, **kwargs: Any) -> None:
+    for arg in args:
+        print(arg)
+```
+
+타입 힌트는 Python의 실행에는 영향을 미치지 않지만, 개발 도구나 linter에서 타입 관련 오류를 잡아주거나, 문서화 도구가 더 정확한 정보를 제공하는 등 다양한 이점이 있습니다.
