@@ -63,6 +63,10 @@ Tomcat의 로그 설정은 `logging.properties` 파일에 있습니다. 이 파�
     java.util.logging.ConsoleHandler.encoding = UTF-8
     ```
 
+    - 또는 주석처리 
+    ```properties
+    #java.util.logging.ConsoleHandler.encoding = UTF-8
+    ```
 3. **Tomcat 재시작**:
     - 설정 변경 후, Tomcat을 재시작합니다.
 
