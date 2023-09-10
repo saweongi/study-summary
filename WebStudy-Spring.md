@@ -93,12 +93,12 @@ https://hermeslog.tistory.com/670
 ## STS (Spring Tool Suite)
 STS는 Spring 기반 프로젝트의 개발에 최적화된 Eclipse 기반의 IDE입니다. STS는 Spring 프로젝트 개발을 쉽게 시작할 수 있게 해주며, 다양한 플러그인 및 툴들이 포함되어 있습니다.
 
-### STS 설치 방법 (spring boot)
+#### STS 설치 방법 (spring boot)
 1. [Spring Tool Suite 공식 다운로드 페이지](https://spring.io/tools)로 이동합니다.
 2. 적절한 버전의 STS를 선택하여 다운로드 받습니다.
 3. 다운로드 받은 파일을 실행하여 설치를 진행합니다.
 
-#### spring MVC Project templates 이용방법 
+### spring MVC Project templates 이용방법 
 1. 최근 STS 4 는 spring boot 만 사용가능
 2. spring legacy proejct (spring MVC proejct)는 STS3 버전을 사용해야함.
 3.  [Spring Tool Suite 3 verion 공식 다운로드 페이지](https://docs.spring.io/sts/nan/v3917/NewAndNoteworthy.html)로 이동합니다.
@@ -106,7 +106,7 @@ STS는 Spring 기반 프로젝트의 개발에 최적화된 Eclipse 기반의 ID
 ![image](https://github.com/leeapgil/study-summary/assets/36579880/d7b3e819-8da3-4b69-be7e-85ba2634fee2)
 4.다운로드 후 파일명을 짧게 수정(이름이 길어서 압출풀때 문제가 생김)
 
-#### STS 3.9.17는 JAVA JDK 11을 사용해야함 
+### STS 3.9.17는 JAVA JDK 11을 사용해야함 
 
 1. [adoptium opensource 다운 ](https://adoptium.net/temurin/releases/)로 이동합니다.
 2. ![image](https://github.com/leeapgil/study-summary/assets/36579880/d75fbf3c-545f-4243-a581-669b21429469)
@@ -117,7 +117,7 @@ STS는 Spring 기반 프로젝트의 개발에 최적화된 Eclipse 기반의 ID
  
 ---
 
-## Maven
+#### Maven
 Maven은 프로젝트 관리 및 빌드 자동화 도구입니다. 의존성 관리, 라이프사이클 관리 등의 기능을 제공합니다.
 STS에는 의존성 맞는 maven을 사용해야 되어 아래 과정은 생략
 
