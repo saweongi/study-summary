@@ -145,9 +145,12 @@ STS에는 의존성 맞는 maven을 사용해야 되어 아래 과정은 생략
 STS를 사용하여 Spring MVC 프로젝트를 시작하는 방법은 다음과 같습니다.
 
 1. STS를 실행합니다.
-2. `File` > `New` > `Spring Starter Project`를 선택합니다.
-3. 필요한 정보와 의존성(Dependencies)을 선택하여 프로젝트를 생성합니다.
-4. 생성된 프로젝트에서 `src` 폴더 및 `pom.xml` 파일을 통해 프로젝트 구조와 의존성을 확인할 수 있습니다.
+2. server 추가 
+3. `File` > `New` > `spring legacy project` > `spring MVC Project`를 선택합니다.
+4. ![image](https://github.com/leeapgil/study-summary/assets/36579880/8cc8e638-1ef8-4712-88d4-86e9263b04f2)
+   ![image](https://github.com/leeapgil/study-summary/assets/36579880/f84f8dc2-69b4-4286-b1cf-80b8f17d1129)
+
+
 
 ---
 
