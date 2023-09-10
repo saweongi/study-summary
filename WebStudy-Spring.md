@@ -114,6 +114,9 @@ STS는 Spring 기반 프로젝트의 개발에 최적화된 Eclipse 기반의 ID
 
 3. JDK설치 후 STS.ini 설정 파일에 -vm jdk경로 설정
 4. ![image](https://github.com/leeapgil/study-summary/assets/36579880/6f6c2b04-71dc-43dd-81d8-7a381559cac0)
+5. 이후 실행
+![image](https://github.com/leeapgil/study-summary/assets/36579880/9aa3300c-19b8-4b39-b3df-13a5d4d533d6)
+
  
 ---
 
