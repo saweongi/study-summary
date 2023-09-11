@@ -84,12 +84,6 @@ public class HelloController {
 위의 예제에서 `HelloController`는 "/hello" URL에 대한 요청을 처리하고, "helloView"라는 뷰 이름을 반환합니다. 이 때, `model` 객체에는 "Hello, Spring MVC!"라는 메시지가 포함되어 있어, 뷰에서 이 메시지를 사용하여 화면을 렌더링 할 수 있습니다.
 
 
-STS 3.9.17 설치 
-java 11 https://adoptium.net/temurin/releases/
-시작전 ini 설정 
-
-https://hermeslog.tistory.com/670
-
 ## STS (Spring Tool Suite)
 STS는 Spring 기반 프로젝트의 개발에 최적화된 Eclipse 기반의 IDE입니다. STS는 Spring 프로젝트 개발을 쉽게 시작할 수 있게 해주며, 다양한 플러그인 및 툴들이 포함되어 있습니다.
 
